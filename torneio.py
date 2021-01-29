@@ -1,5 +1,16 @@
 import random
 
+'''O que eu pensei no torneio aleatório foi usar cada passo das funções que eu já tinha, então seria a de cadastrar o lutador, criar o torneio e depois registrar esses jogadores
+nesse torneio. Fui alterando informações que antes vinham de inputs usando essas listas de nomes, faixas e artes marciais. Para facilitar esse processo eu utilizei os loops de 
+repetição. Não consegui realizar a parte de inscrever esses lutadores no torneio aleatório, acabei ficando sem tempo, provavelmente é uma coisinha boba. Mas consegui criar esses
+lutadores aleatórios, com nome aleatório, idade aleatório, peso, força, todos atributos aleatórios. Pro torneio aparentemente deu certo também, não consegui testar todas as 
+possibilidades de erros que poderiam ocorrer por causa da falta de tempo. Mas o torneio teve uma lista aleatória de faixas, uma lista aleatória de categorias de peso, faltou só
+conseguir inscrever esses lutadores mesmo. Eu desativei a função de criar o torneio aleatório comentado ela porque como o vitor, meu mentor, falou que essa parte
+era mais um extra não queria que ela desse algum erro por acaso no resto do programa. Então pra usar ela é só descomentar o random_tournament() e comentar o menu_start().
+
+
+'''
+
 tournaments = []
 fighters = []
 
@@ -193,7 +204,9 @@ Sair (4)
     elif int(choice) == 2:
         menu_fighter()
     elif int(choice) == 3:
-        random_tournament()
+        print('Modo de torneio aleatório desativado. Descomente a linha abaixo e comente essa para usar essa função')
+        menu_start()
+        #random_tournament()
     elif int(choice) == 4:
         quit()
 
